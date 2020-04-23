@@ -1,0 +1,31 @@
+<launch>
+
+  <group ns="add_tf_front">
+    <node pkg="add_tf" type="frame_tf_broadcaster" name="tf_new" />
+      <param name="new_x"    value="0.0"/>
+      <param name="new_y"    value="0.0"/>
+      <param name="new_z"    value="0.0"/>
+      <param name="new_rx"   value="0.0"/>
+      <param name="new_ry"   value="0.0"/>
+      <param name="new_rz"   value="-0.383"/>
+      <param name="new_rw"   value="0.924"/>
+      <!-- <param name="new_rz"   value="0.0"/>
+      <param name="new_rw"   value="1.0"/> -->
+      <param name="tf_name"  value="tf_front"/>
+  </group>
+
+  <group ns="add_tf_back">
+    <node pkg="add_tf" type="frame_tf_broadcaster" name="tf_new" />
+      <param name="new_x"    value="-0.0"/>
+      <param name="new_y"    value="-0.0"/>
+      <param name="new_z"    value="0.0"/>
+      <param name="new_rx"   value="0.0"/>
+      <param name="new_ry"   value="0.0"/>
+      <param name="new_rz"   value="0.924"/>
+      <param name="new_rw"   value="0.383"/>
+      <!-- <param name="new_rz"   value="0.0"/>
+      <param name="new_rw"   value="1.0"/> -->
+      <param name="tf_name"  value="tf_back"/>
+  </group>
+
+</launch>
