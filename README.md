@@ -10,12 +10,7 @@ Play tb3 with two UTM-30LX lidar
 - [Tb3_driver](#Tb3_driver)
 - [UTM-30LX_driver](#UTM-30LX_driver)
 - [Slam](#Slam)
-- [Permission](#Permission)
-- [Permission](#Permission)
-- [Permission](#Permission)
-- [Permission](#Permission)
-- [Permission](#Permission)
-
+- [Navigation](#Navigation)
 <!-- /TOC -->
 
 ## Platform
