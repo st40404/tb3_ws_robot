@@ -6,11 +6,15 @@ Play tb3 with two UTM-30LX lidar
 - [Tb3_ws_robot](#Tb3_ws_robot)
 - [Platform](#Platform)
 - [Permission](#Permission)
-- [Tb3 driver](#Tb3 driver)
-- [UTM-30LX deiver](#UTM-30LX deiver)
+- [Tb3_driver](#Tb3_driver)
+- [UTM-30LX_driver](#UTM-30LX_driver)
 - [Permission](#Permission)
 - [Permission](#Permission)
 - [Permission](#Permission)
+- [Permission](#Permission)
+- [Permission](#Permission)
+- [Permission](#Permission)
+
 <!-- /TOC -->
 
 ## Platform
@@ -31,15 +35,15 @@ Play tb3 with two UTM-30LX lidar
    $ sudo chmod 777 /dev/ttyAcm1
    $ sudo chmod 777 /dev/ttyAcm2
    ```
-## Tb3 driver
+## Tb3_driver
 ```bash
 $ roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
-## UTM-30LX deiver
+## UTM-30LX_driver
  * This launch include 
-    - Two translate TF for two Lidar
-    - TURTLEBOT3(waffle)
-
+    - UTM-30LX front and back driver (lidar_front/urg_node, lidar_back/urg_node)
+    - Two translate TF for two Lidar (new_tf)
+    - merge two scan data to one (laserscan_multi_merger)
    ```bash
    $ roslaunch urg_node urg_lidar.launch
    ```
